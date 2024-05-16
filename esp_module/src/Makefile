@@ -26,7 +26,7 @@ OBJS := $(patsubst $(SRC_DIR)/%.c,$(OBJ_DIR)/%.o,$(SRCS))
 UTIL_OBJS := $(patsubst $(UTILS_DIR)/%.c,$(OBJ_DIR)/%.o,$(UTILS))
 LIB_OBJS := $(patsubst $(LIBS_DIR)/%.c,$(OBJ_DIR)/%.o,$(LIBS))
 
-EXECUTABLE := esp_ubus
+EXECUTABLE := esp_module
 
 .PHONY: all clean
 
