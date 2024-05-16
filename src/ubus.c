@@ -119,7 +119,7 @@ static int device_on(struct ubus_context *ctx, struct ubus_object *obj, struct u
 	ubus_send_reply(ctx, req, b.head);
 	blob_buf_free(&b);
 
-	log_debug("freeing port\n");
+	log_debug("freeing port");
 	sp_close(port);
 	sp_free_port(port);
 
